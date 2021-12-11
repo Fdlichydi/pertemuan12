@@ -5,30 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout
+
+    <Spinner
+        android:id="@+id/sort_by_spinner"
+        android:layout_width="278dp"
+        android:layout_height="13dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <CheckBox
+        android:id="@+id/notify_me_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:layout_width="@+id/next_button"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="next"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <EditText
+        android:id="@+id/album_description_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="To"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Subject"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:hint="Message"/>
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="SEND" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:hint="Album description"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="-93dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="159dp"
+        android:layout_height="184dp"
+        android:src="@drawable/ic_launcher_background"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hallo Ini Adalah Tugas Nanda Utama"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#4689C8"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#4e4b4f"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
